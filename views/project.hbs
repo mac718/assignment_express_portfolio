@@ -1,0 +1,8 @@
+<h1>{{project.name}}</h1>
+<image src={{project.image}}>
+<h2>Additional Details</h2
+<ul>
+  {{#each project.details as |detail|}}
+    <li class="additional-detail">{{detail}}</li>
+  {{/each}}
+</ul>

@@ -1,0 +1,16 @@
+<h1>Projects Portfolio</h1>
+<div >
+<ul id="details">
+  {{#each projects as |project|}}
+    <li>
+      <h3><a href='./project/{{project.name}}'>{{project.name}}</a></h3>
+      <ul>
+        <li><strong>Tech:</strong> {{project.tech}}</li>
+        <li><strong>Description:</strong> {{project.description}}</li>
+        <li><strong>Repo Link:</strong> <a href={{project.repoLink}}>{{project.repoLink}}</a></li>
+      </ul>
+    </li>
+
+  {{/each}}
+</ul>
+</div>
